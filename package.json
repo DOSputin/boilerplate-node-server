@@ -1,0 +1,27 @@
+{
+  "author": "Johanness Nilsson <dos.putin@teknomadix.com>",
+  "description": "Boilerplate Node.js server with Babel 7",
+  "keywords": [
+    "node",
+    "bable",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "name": "node-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.2",
+    "standard": "*"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js standard --fix",
+    "test": "standard --fix && echo \"No test specified\" && exit 0"
+  }
+}
